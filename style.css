@@ -1,0 +1,220 @@
+:root{
+    --navbar-color:#212529;
+    --yellow-color:#ffc800;
+    --gray-color:#6c757d;
+}
+/* star navbr */
+.navbar-brand img {
+    height: 2rem;
+    transition: all .5s;
+}
+.allpage nav{
+    background-color: transparent;
+    padding: 1.5rem 0;
+    transition: all .5s;
+    
+  }
+.nav-item .nav-link{
+    color: white;
+}
+.nav-item .nav-link:hover ,
+.nav-item .nav-link:focus{
+    color: var(--yellow-color);
+}
+nav .navbar-nav .nav-link.active{
+  color: var(--yellow-color);
+
+}
+nav .navbar-toggler {
+border: 1px solid white;
+}
+.navbar-toggler ion-icon{
+    font-size: 40px;
+    color: white;
+}
+ /* End navbar */
+ /* Start mastahed */
+ .mastahed{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/img/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+ }
+ .mastahed .container h2{
+    font-size: 45px;
+ }
+ .mastahed .container h1{
+    font-family: fantasy;
+    font-size: 80px;
+ }
+ .mastahed .container button{
+   background-color: var(--yellow-color);
+   padding: 1.25rem 2.5rem;
+   font-size: 1.125rem;
+ }
+ /* End mastahed */
+ /* Start servises */
+.servises .row .col-md-4 ion-icon{
+    background-color: var(--yellow-color);
+    font-size: 90px;
+}
+ /* End servises */
+  /* Start PORTFOLIO */
+  .portfolio .row .item .before{
+    cursor: pointer;
+    position: relative;
+    
+  }
+  .portfolio .row .item .before::after{
+    content: "+";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 200, 0, 0.9);
+    color: white;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+  }
+  .portfolio .row .item .before:hover::after{
+    opacity: 1;
+  }
+  /* End PORTFOLIO */
+
+  /* Start About */
+  .about .timeline::after{
+    content: "";
+    position: absolute;
+    width:2px;
+    bottom: 0;
+    background-color: #e9ecef;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+  }
+  .about .timeline .left{
+  
+    p{
+        max-width: 200px;
+    }
+  }
+
+
+  .timeline .timeline-proudct{
+    margin-bottom: 100px;
+  }
+  .about .timeline .right{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .about .timeline .end{
+    width: 216px;
+    height: 216px;
+
+    div{
+        background-color: var(--yellow-color);
+    }
+  }
+  .about .timeline .end p{
+    font-size: 25px;
+  }
+
+  @media screen and (max-width:768px) {
+    .about .timeline .right{
+        left: 0;
+        transform: translate(0);
+
+    }
+    .about .timeline::after{
+        left: 54px;
+    }
+    .about .timeline .left{
+    margin-left: 120px;
+    
+    }
+
+  }
+  @media screen and (max-width:992px) {
+
+    .about .timeline .right{
+        width: 108px;
+    }
+    .about .timeline .end{
+        width: 108px;
+        height: 108px;
+        p{
+          font-size: 15px;
+        }
+    }
+  }
+
+  /* End About */
+ /* Strat Amazing */
+ .amazing{
+  margin-top: 200px;
+}
+ .amazing .row img{
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 14rem;
+  height: 14rem;
+}
+.btoon{
+  height: 2.5rem;
+  width: 2.5rem;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+}
+ /* End Amazing */
+ /* Strat Logos */
+ .logos img{
+  height: 2.75rem;
+  cursor: pointer;
+ }
+ /* End Logos */
+ /* Start Contact  */
+ .contact{
+  background-color: #212529;
+  background-image: url(../assets/img/map-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+
+ .contact form.row textarea.form-control{
+  height: calc(100% - 24px);
+  min-height: 10rem;
+}
+
+.contact input::placeholder , 
+.contact textarea::placeholder{
+  color: #6c757d7d;
+  font-weight: bold;
+}
+
+.contact input[type="submit"]{
+  background-color: var(--yellow-color);
+  padding: 1.25rem 2.5rem;
+}
+ /* ُEnd Contact  */
+
+
+.scroll-top{
+  background-color: var(--yellow-color);
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  right: 20px;
+opacity: 0;
+transition: 1s;
+cursor: pointer;
+}
